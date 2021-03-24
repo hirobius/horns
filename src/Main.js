@@ -5,9 +5,9 @@ class Main extends React.Component {
   render() {
     return (
       <div className="beastContainer">
-        <HornedBeasts title="Beast Name 1" description="Lorem Ipsum Placeholder Description 1"/>
-        <HornedBeasts title="Beast Name 2" description="Lorem Ipsum Placeholder Description 2"/>
-        <HornedBeasts title="Beast Name 3" description="Lorem Ipsum Placeholder Description 3"/>
+        <HornedBeasts name="Uno" title="Beast Name 1" alt="pic of a horned beast" description="Placeholder Description 1" src="https://via.placeholder.com/150x150"/>
+        <HornedBeasts name="Dos" title="Beast Name 2" alt="pic of a horned beast" description="Placeholder Description 2" src="https://via.placeholder.com/150x150"/>
+        <HornedBeasts name="Tres" title="Beast Name 3" alt="pic of a horned beast" description="Placeholder Description 3" src="https://via.placeholder.com/150x150"/>
       </div>
     );
   }
