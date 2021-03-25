@@ -1,6 +1,5 @@
 .beastContainer {
-  background-color: greenyellow;
-  /* display: flex; */
+  /* background-color: greenyellow; */
 }
 
 img {
@@ -10,13 +9,34 @@ img {
 
 .title {
   background-color: green;
+  text-align: center;
   /* flex: 6; */
 }
 
-.description {
-  /* flex: 6; */
+.beast-name {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .beast-cards {
-  padding: 16px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+  background-color: whitesmoke;
+  height: 420px;
+  border: 1px solid  gainsboro;
+  border-radius: 6px;
+  max-width: 300px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
+}
+
+.heart {
+  color: royalblue;
+}
+
+.description {
+  margin-top: 12px;
+  margin-right: 12px;
+  font-size: 12px;
+  line-height: 1.25;
 }

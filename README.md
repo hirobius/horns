@@ -26,13 +26,13 @@ Actual time needed to complete: ___23m__
 
 ## Feature 3: Bootstrap
 
-Estimate of time needed to complete: 5m
+Estimate of time needed to complete: 1hr
 
-Start time: 10:50pm
+Start time: 9:18pm
 
-Finish time: 10:52pm
+Finish time: 9:39pm
 
-Actual time needed to complete: 2m
+Actual time needed to complete: 21m
 
 ---
 

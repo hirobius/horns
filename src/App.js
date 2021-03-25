@@ -3,7 +3,6 @@ import React from 'react';
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
-import Button from 'react-bootstrap/Button';
 import data from './data.json';
 
 class App extends React.Component {
@@ -32,9 +31,6 @@ class App extends React.Component {
       <div>
         <Header />
         <Main />
-        <h2>Favorites{this.state.favoritesCounter}</h2>
-        <button onClick={this.buttonClicked}>Change this button to a Heart img</button>
-        <Button>hmmm...</Button>
         <Footer />
       </div>
     );
