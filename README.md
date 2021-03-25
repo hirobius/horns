@@ -37,3 +37,9 @@ Actual time needed to complete: 21m
 ---
 
 ## Stretch
+
+---
+
+# Resources
+
+https://upmostly.com/tutorials/react-onhover-event-handling-with-examples

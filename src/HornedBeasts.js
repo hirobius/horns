@@ -10,14 +10,12 @@ class HornedBeasts extends React.Component {
     this.state = {
       favoritesCounter: 1,
     };
-    
   }
 
   handleHover = (e) => {
     e.target.style.color = 'red';
     e.target.style.cursor = 'pointer';
   }
-  
   handleLeave = (e) => e.target.style.color = 'royalblue'
 
   favoritedClick = () => {
