@@ -6,7 +6,7 @@ class Main extends React.Component {
   render() {
     return (
       <div className="beastContainer">
-        <HornedBeasts title={data[0].title} src={data[0].image_url} description={data[0].description} />
+        <HornedBeasts className="beast-cards" title={data[0].title} src={data[0].image_url} description={data[0].description} />
         <HornedBeasts title={data[1].title} src={data[1].image_url} description={data[1].description} />
         <HornedBeasts title={data[2].title} src={data[2].image_url} description={data[2].description} />
         <HornedBeasts title={data[3].title} src={data[3].image_url} description={data[3].description} />

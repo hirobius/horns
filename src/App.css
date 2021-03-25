@@ -16,3 +16,7 @@ img {
 .description {
   /* flex: 6; */
 }
+
+.beast-cards {
+  padding: 16px;
+}
