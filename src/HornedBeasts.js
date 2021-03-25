@@ -10,10 +10,18 @@ class HornedBeasts extends React.Component {
     this.state = {
       favoritesCounter: 1,
     };
+    
   }
 
-  imgClicked = () => {
-    console.log('imgClicked!');
+  handleHover = (e) => {
+    e.target.style.color = 'red';
+    e.target.style.cursor = 'pointer';
+  }
+  
+  handleLeave = (e) => e.target.style.color = 'royalblue'
+
+  favoritedClick = () => {
+    console.log('favoritedClick!');
     // sadly, we cannot just write:
     // this.state.favoritesCounter++
     // instead, we write:
@@ -24,11 +32,11 @@ class HornedBeasts extends React.Component {
 
   render() {
     return (
-      <div className="beast-cards">
+      <div className="beast-cards" >
         <h2 className="beast-name">{this.props.title}</h2>
-        <img onClick={this.imgClicked} title={this.props.title} src={this.props.src} alt={this.props.alt}></img>
+        <img onClick={this.favoritedClick} title={this.props.title} src={this.props.src} alt={this.props.alt}></img>
         <p className="description">{this.props.description}</p>
-        <h3><span className="heart">♥</span>{this.state.favoritesCounter}</h3>
+        <h3><span className="heart" onClick={this.favoritedClick} onMouseOver={this.handleHover} onMouseLeave={this.handleLeave} >♥</span>{this.state.favoritesCounter}</h3>
       </div>
     );
   }
