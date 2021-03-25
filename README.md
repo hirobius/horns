@@ -6,21 +6,21 @@ Estimate of time needed to complete: _1hr____
 
 Start time: __7:36___
 
-Finish time: _____
+Finish time: ___8:10__
 
-Actual time needed to complete: _____
+Actual time needed to complete: __34m___
 
 ---
 
 ## Feature #2: Allow users to vote for their favorite beast
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __1hr___
 
-Start time: __in progress, framework implemented in class___
+Start time: __8:11___
 
-Finish time: _____
+Finish time: __8:34___
 
-Actual time needed to complete: _____
+Actual time needed to complete: ___23m__
 
 ---
 
