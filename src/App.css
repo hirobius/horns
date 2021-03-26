@@ -1,10 +1,28 @@
+.App {
+  /* overflow-x: hidden; */
+}
+
 .beastContainer {
   /* background-color: greenyellow; */
+  /* margin: 40px; */
 }
 
 img {
+  align-content: center;
+  border-radius: 2px;
   width: 200px;
+  max-height: 400px;
   /* flex: 2; */
+}
+
+h1 {
+  text-align: center;
+  margin: 40px;
+}
+
+.footer {
+  text-align: center;
+  margin: 40px;
 }
 
 .title {
@@ -21,12 +39,12 @@ img {
 .beast-cards {
   margin: 10px;
   margin-bottom: 20px;
-  padding: 8px;
+  padding: 12px;
   background-color: whitesmoke;
   height: 420px;
-  border: 1px solid  gainsboro;
+  border: 1px solid gainsboro;
   border-radius: 6px;
-  max-width: 300px;
+  min-width: 224px;  
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
 }
 
@@ -39,4 +57,10 @@ img {
   margin-right: 12px;
   font-size: 12px;
   line-height: 1.25;
+  /* padding: 12px; */
+}
+
+.favorite {
+  position: absolute;
+  bottom: 0%;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 // import Button from 'react-bootstrap/Button';
 
 class HornedBeasts extends React.Component {
@@ -30,12 +31,12 @@ class HornedBeasts extends React.Component {
 
   render() {
     return (
-      <div className="beast-cards" >
+      <Card className="beast-cards" >
         <h2 className="beast-name">{this.props.title}</h2>
         <img onClick={this.favoritedClick} title={this.props.title} src={this.props.src} alt={this.props.alt}></img>
         <p className="description">{this.props.description}</p>
-        <h3><span className="heart" onClick={this.favoritedClick} onMouseOver={this.handleHover} onMouseLeave={this.handleLeave} >♥</span>{this.state.favoritesCounter}</h3>
-      </div>
+        <h3 className="favorite"><span className="heart" onClick={this.favoritedClick} onMouseOver={this.handleHover} onMouseLeave={this.handleLeave} >♥</span>{this.state.favoritesCounter}</h3>
+      </Card>
     );
   }
 }
