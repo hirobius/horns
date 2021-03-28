@@ -7,8 +7,6 @@ import data from './data.json';
 
 class App extends React.Component {
   constructor(props) {
-    // this is always the first line of our constructor within a component
-    // this is the only time we can set the state with =, and it HAS to be in the constructor, if so
     super(props);
     this.state = {
       favoritesCounter: 1,
@@ -18,9 +16,6 @@ class App extends React.Component {
 
   buttonClicked = () => {
     console.log('buttonclicked!');
-    // sadly, we cannot just write:
-    // this.state.favoritesCounter++
-    // instead, we write:
     this.setState({
       favoritesCounter: this.state.favoritesCounter + 1
     });
@@ -30,7 +25,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Main />
+        <Main data={data} />
         <Footer />
       </div>
     );
