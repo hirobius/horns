@@ -7,12 +7,18 @@
   /* margin: 40px; */
 }
 
-img {
+.gallery {
   align-content: center;
   border-radius: 2px;
   width: 200px;
   max-height: 400px;
   /* flex: 2; */
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+  transition: 300ms;
 }
 
 h1 {
@@ -41,7 +47,7 @@ h1 {
   margin-bottom: 20px;
   padding: 12px;
   background-color: whitesmoke;
-  height: 420px;
+  /* height: 420px; */
   border: 1px solid gainsboro;
   border-radius: 6px;
   min-width: 224px;  
@@ -55,6 +61,7 @@ h1 {
 .description {
   margin-top: 12px;
   margin-right: 12px;
+  margin-bottom: 36px;
   font-size: 12px;
   line-height: 1.25;
   /* padding: 12px; */
