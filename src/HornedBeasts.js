@@ -1,16 +1,12 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import SelectedBeast from './SelectedBeast';
-// import Modal from 'react-bootstrap/Modal';
-// import Button from 'react-bootstrap/Button';
 
 class HornedBeasts extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      favoritesCounter: 1,
-      showModal: false,
+      favoritesCounter: 0,
     };
   }
 
@@ -20,18 +16,12 @@ class HornedBeasts extends React.Component {
   }
   handleLeave = (e) => e.target.style.color = 'royalblue'
 
-  showModal = () => {
-    return (
-      this.setState({ showModal: true })
-    );
-  };
-
-  favoritedClick = () => {
-    console.log('favoritedClick!');
-    this.setState({
-      favoritesCounter: this.state.favoritesCounter + 1
-    });
+  handleClick = () => {
+    this.favoritedClick();
+    this.props.setBeast(this.props.index, this.state.favoritesCounter);
   }
+
+  favoritedClick = () => (this.setState({ favoritesCounter: this.state.favoritesCounter + 1 }));
 
   render() {
     return (
@@ -39,17 +29,15 @@ class HornedBeasts extends React.Component {
         <h2 className="beast-name">{this.props.title}</h2>
         <img
           className="gallery"
-          onClick={this.showModal}
+          onClick={() => this.handleClick()}
+          name={this.props.keyword}
           title={this.props.title}
-          src={this.props.src}
-          alt={this.props.alt}>
-        </img>
-        <SelectedBeast
-          show={this.state.showModal}
-          title={this.props.title}
+          src={this.props.image_url}
           description={this.props.description}
-          src={this.props.src}
+          key={this.props.title}
+          alt={this.props.title}
         />
+
         <h3 className="favorite">
           <span className="heart"
             onClick={this.favoritedClick}

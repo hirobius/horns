@@ -7,11 +7,20 @@
   /* margin: 40px; */
 }
 
+.close {
+
+}
+
+.modal-image {
+  width: 100%;
+}
+
 .gallery {
-  align-content: center;
+  /* align-content: center; */
   border-radius: 2px;
-  width: 200px;
-  max-height: 400px;
+  width: 100%;
+  padding-bottom: 36px;
+  /* max-height: 400px; */
   /* flex: 2; */
 }
 
@@ -59,9 +68,9 @@ h1 {
 }
 
 .description {
-  margin-top: 12px;
-  margin-right: 12px;
-  margin-bottom: 36px;
+  margin-top: 20px;
+  /* margin-right: 12px; */
+  /* margin-bottom: 36px; */
   font-size: 12px;
   line-height: 1.25;
   /* padding: 12px; */
@@ -70,4 +79,18 @@ h1 {
 .favorite {
   position: absolute;
   bottom: 0%;
+}
+
+h3:hover {
+  transform: scale(1.1);
+}
+
+.modal-title {
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.close {
+  position: absolute;
+  right: 16px;
 }

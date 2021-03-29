@@ -4,28 +4,40 @@ import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import data from './data.json';
+import SelectedBeast from './SelectedBeast';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      favoritesCounter: 1,
+      showModal: false,
+      allBeasts: data,
+      beast: {}
     };
-    console.log(data.map( beast => beast.title));
   }
 
-  buttonClicked = () => {
-    console.log('buttonclicked!');
-    this.setState({
-      favoritesCounter: this.state.favoritesCounter + 1
-    });
-  }
+  setBeast = (index, favorites) => {
+    console.log(favorites);
+    this.setState({ beast: this.state.allBeasts[index], showModal: true});
+    console.log(this.state.beast);
+  };
+
+  hideModal = () => (this.setState({ showModal: false }));
 
   render() {
     return (
       <div>
         <Header />
-        <Main data={data} />
+        <Main
+          allBeasts={this.state.allBeasts}
+          setBeast={this.setBeast}
+        />
+        <SelectedBeast
+          showModal={this.state.showModal}
+          beast={this.state.beast}
+          hideModal={this.hideModal}
+          title={this.state.title}
+        />
         <Footer />
       </div>
     );
