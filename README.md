@@ -11,12 +11,3 @@ Finish time: ___1:20__
 Actual time needed to complete: __40m___
 
 ---
-
-To Do:
-
-Move all state to app.js
-move all functions up to app.js
-Run forEach for the beastArray in Main, but move it to the app level somehow
-Get props rigged up in modal
-Get Favorites updating
-Refactor code

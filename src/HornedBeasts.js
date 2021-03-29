@@ -16,6 +16,11 @@ class HornedBeasts extends React.Component {
   }
   handleLeave = (e) => e.target.style.color = 'royalblue'
 
+  handleClick = () => {
+    this.favoritedClick();
+    this.props.setBeast(this.props.index, this.state.favoritesCounter);
+  }
+
   favoritedClick = () => (this.setState({ favoritesCounter: this.state.favoritesCounter + 1 }));
 
   render() {
@@ -23,14 +28,15 @@ class HornedBeasts extends React.Component {
       <Card className="beast-cards" >
         <h2 className="beast-name">{this.props.title}</h2>
         <img
-          onClick={this.favoritedClick}
-          onClick={this.props.setBeast}
           className="gallery"
-          // onClick={this.showModal}
+          onClick={() => this.handleClick()}
+          name={this.props.keyword}
           title={this.props.title}
-          src={this.props.src}
-          alt={this.props.alt}>
-        </img>
+          src={this.props.image_url}
+          description={this.props.description}
+          key={this.props.title}
+          alt={this.props.title}
+        />
 
         <h3 className="favorite">
           <span className="heart"

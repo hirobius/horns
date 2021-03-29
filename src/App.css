@@ -7,7 +7,15 @@
   /* margin: 40px; */
 }
 
-img {
+.close {
+
+}
+
+.modal-image {
+  width: 100%;
+}
+
+.gallery {
   /* align-content: center; */
   border-radius: 2px;
   width: 100%;
@@ -60,9 +68,9 @@ h1 {
 }
 
 .description {
-  /* margin-top: 12px;
-  margin-right: 12px;
-  margin-bottom: 36px; */
+  margin-top: 20px;
+  /* margin-right: 12px; */
+  /* margin-bottom: 36px; */
   font-size: 12px;
   line-height: 1.25;
   /* padding: 12px; */

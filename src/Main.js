@@ -6,13 +6,15 @@ import CardColumns from 'react-bootstrap/CardColumns';
 class Main extends React.Component {
 
   render() {
-    const beastArray = this.props.allBeasts.map(beast => {
+    const beastArray = this.props.allBeasts.map((beast, index) => {
       return <HornedBeasts
-        name={this.props.keyword}
-        title={this.props.title}
-        src={beast.image_url}
+        name={beast.keyword}
+        title={beast.title}
+        image_url={beast.image_url}
         description={beast.description}
-        key={beast.title}
+        key={index}
+        index={index}
+        alt={this.props.title}
         setBeast={this.props.setBeast}
       />;
     });
