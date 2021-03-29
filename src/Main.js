@@ -4,32 +4,27 @@ import Container from 'react-bootstrap/Container';
 import CardColumns from 'react-bootstrap/CardColumns';
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showModal: false
-    };
-  }
-  
+
   render() {
-    let beastArray = this.props.data.map(beast => {
+    const beastArray = this.props.allBeasts.map(beast => {
       return <HornedBeasts
-        name={beast.keyword}
-        title={beast.title}
+        name={this.props.keyword}
+        title={this.props.title}
         src={beast.image_url}
         description={beast.description}
         key={beast.title}
+        setBeast={this.props.setBeast}
       />;
     });
 
     return (
-      < main >
+      <main>
         <Container className="beastContainer">
           <CardColumns>
             {beastArray}
           </CardColumns>
         </Container>
-      </main >
+      </main>
     );
   }
 }
