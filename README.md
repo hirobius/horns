@@ -1,13 +1,9 @@
-# Time Estimates
+# Resources
 
-Number and name of feature: ________#1 Display a Modal________________________
+https://react-bootstrap.github.io/components/forms/
 
-Estimate of time needed to complete: __Med___
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
-Start time: __12:40pm___
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
-Finish time: ___1:20__
-
-Actual time needed to complete: __40m___
-
----
+https://reactjs.org/docs/components-and-props.html

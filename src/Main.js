@@ -12,13 +12,13 @@ class Main extends React.Component {
         title={beast.title}
         image_url={beast.image_url}
         description={beast.description}
+        horns={beast.horns}
         key={index}
         index={index}
         alt={this.props.title}
         setBeast={this.props.setBeast}
       />;
     });
-
     return (
       <main>
         <Container className="beastContainer">
